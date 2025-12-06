@@ -23,6 +23,7 @@
       overflow-x: hidden;
       color: white;
       padding-top: 30px;
+      position: relative;
     }
 
     body::before {
@@ -51,7 +52,7 @@
       text-shadow: 0 0 5px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff;
       animation: flicker 2.5s infinite alternate;
       margin-top: 10px;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
 
     @keyframes flicker {
@@ -60,10 +61,47 @@
       100% { opacity: 1; }
     }
 
+    /* PHOTO FIXED */
+    .photo-container {
+      position: relative;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin-bottom: 50px;
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: block;
+      object-fit: cover;
+      position: relative;
+      z-index: 1;
+    }
+
+    .photo-container::before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      border-radius: 50%;
+      background: conic-gradient(#ff00cc, #00ffff, #ffcc00, #00ffcc, #ff00cc);
+      z-index: 0;
+      animation: rotateNeon 5s linear infinite;
+    }
+
+    @keyframes rotateNeon {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
     .box {
       position: relative;
       padding: 30px;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
       width: 75%;
       max-width: 700px;
       text-align: center;
@@ -132,19 +170,33 @@
         border-color: #00ffff;
       }
     }
+
   </style>
 </head>
 <body>
 
   <h1 class="neon-text">TECHNICAL FAHAD</h1>
 
+  <!-- PHOTO -->
+  <div class="photo-container">
+    <img src="fahad.jpg" alt="Fahad Photo">
+  </div>
+
+  <!-- 1st Intro Box -->
   <div class="box">
     Welcome to my official website!  
     I am Technical Fahad – Android Developer, Script Maker, Bot Developer,  
     and CyberTech Specialist.
   </div>
 
-  <!-- ⭐ CONTACT BUTTON (WhatsApp Direct Open) -->
+  <!-- ⭐ 2nd Intro Box (New One Added) -->
+  <div class="box">
+    IF You Wanna Free TikTok Likes Trick  
+    Then Click On ( Contact ) Button  
+    And Get The Trick 👻
+  </div>
+
+  <!-- CONTACT BUTTON -->
   <a href="https://wa.me/923251138959" target="_blank">
     <button class="button">Contact Me</button>
   </a>
