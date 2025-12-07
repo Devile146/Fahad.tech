@@ -61,30 +61,6 @@
       100% { opacity: 1; }
     }
 
-    @keyframes rotateNeon {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    /* FLAG IMAGE */
-    .flag-container {
-      position: relative;
-      width: 260px;
-      height: 160px;
-      margin-bottom: 10px;
-      padding: 4px;
-      background: conic-gradient(#ff00cc, #00ffff, #ffcc00, #00ffcc, #ff00cc);
-      animation: rotateNeon 6s linear infinite;
-    }
-
-    .flag-container img {
-      width: 100%;
-      height: 100%;
-      display: block;
-      object-fit: cover;
-      border: 2px solid #fff; 
-    }
-
     /* PROFILE PHOTO */
     .photo-container {
       position: relative;
@@ -95,7 +71,6 @@
       padding: 4px;
       border-radius: 50%;
       background: conic-gradient(#ff00cc, #00ffff, #ffcc00, #00ffcc, #ff00cc);
-      animation: rotateNeon 5s linear infinite;
     }
 
     .photo-container img {
@@ -103,8 +78,8 @@
       height: 100%;
       display: block;
       object-fit: cover;
-      border-radius: 50%; /* circular photo */
-      border: 2px solid #fff; 
+      border-radius: 50%;
+      border: 2px solid #fff;
     }
 
     /* PROMPT BOX */
@@ -155,7 +130,6 @@
       margin-top: 20px;
       padding: 4px;
       background: conic-gradient(#ff00cc, #00ffff, #ffcc00, #00ffcc, #ff00cc);
-      animation: rotateNeon 5s linear infinite;
     }
 
     .sindh-container img {
@@ -171,11 +145,6 @@
 <body>
 
   <h1 class="neon-text">TECHNICAL FAHAD</h1>
-
-  <!-- FLAG IMAGE -->
-  <div class="flag-container">
-    <img src="flag.jpg" alt="Flag Image">
-  </div>
 
   <!-- PROFILE PHOTO -->
   <div class="photo-container">
