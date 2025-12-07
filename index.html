@@ -2,7 +2,7 @@
 <html lang="sd">
 <head>
   <meta charset="UTF-8">
-  <title>💞FAHAD SINDHI 👑 Intro</title>
+  <title>TECHNICAL FAHAD Intro</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Audiowide&display=swap');
 
@@ -52,7 +52,7 @@
       text-shadow: 0 0 5px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff;
       animation: flicker 2.5s infinite alternate;
       margin-top: 10px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     @keyframes flicker {
@@ -61,15 +61,143 @@
       100% { opacity: 1; }
     }
 
-    /* PHOTO CONTAINER WITH NEON BORDER */
+    /* FLAG IMAGE */
+    .flag-container {
+      position: relative;
+      width: 220px;
+      height: 220px;
+      margin-bottom: -40px; /* overlap with profile photo */
+      border-radius: 50%;
+      padding: 5px;
+      background: conic-gradient(#ff00cc, #00ffff, #ffcc00, #00ffcc, #ff00cc);
+      animation: rotateNeon 6s linear infinite;
+    }
+
+    .flag-container img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* PROFILE PHOTO */
     .photo-container {
       position: relative;
       width: 200px;
       height: 200px;
       border-radius: 50%;
       margin-bottom: 40px;
+      z-index: 1;
+      padding: 5px;
+      background: conic-gradient(#ff00cc, #00ffff, #ffcc00, #00ffcc, #ff00cc);
+      animation: rotateNeon 5s linear infinite;
     }
 
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* PROMPT BOX */
+    .box {
+      position: relative;
+      padding: 40px 30px;
+      margin-bottom: 40px;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      font-size: 1.6em; 
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      z-index: 1;
+      overflow: hidden;
+      font-family: 'Orbitron', sans-serif;
+      color: #000;
+      line-height: 1.8em;
+    }
+
+    .box::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      right: -3px;
+      bottom: -3px;
+      background: linear-gradient(60deg, #ff00cc, #00ffff, #ffcc00, #00ffcc, #ff00cc);
+      background-size: 400% 400%;
+      border-radius: 20px;
+      z-index: -1;
+      animation: rotateBorder 20s linear infinite;
+      filter: blur(2px);
+    }
+
+    @keyframes rotateBorder {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* SINDH IMAGE */
+    .sindh-container {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin-top: 20px;
+      border-radius: 10px;
+      padding: 5px;
+      background: conic-gradient(#ff00cc, #00ffff, #ffcc00, #00ffcc, #ff00cc);
+      animation: rotateNeon 5s linear infinite;
+    }
+
+    .sindh-container img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1 class="neon-text">TECHNICAL FAHAD</h1>
+
+  <!-- FLAG IMAGE -->
+  <div class="flag-container">
+    <img src="flag.jpg" alt="Flag Image">
+  </div>
+
+  <!-- PROFILE PHOTO -->
+  <div class="photo-container">
+    <img src="fahad.jpg" alt="Fahad Photo">
+  </div>
+
+  <!-- PROMPT BOX -->
+  <div class="box">
+    🌿 محترم دوستو 🌿<br><br>
+    ✨ اڄ اسانجو سنڌي ڪلچر ڊي آهي، هڪ اهڙو ڏينهن جيڪو اسانجي ثقافت، رواجن ۽ محبت سان ڀريل تاريخ جو جشن آهي.<br><br>
+    اچو ته پنهنجي ورثي کي ياد ڪريون، اجرڪ، موسيقي، تهذيب ۽ ريتون گڏجي 💞ملهائينداسين<br><br>
+    🧡 سنڌي ثقافت جي هر رنگ ۽ هر روايت اسانجي سڃاڻپ آهي، اچو ته ان کي فخر سان پيش ڪريون.<br><br>
+    ❤️هن جنم، هن جنم لاء وچن ٿو ڪريان، 💫<br>
+    💞مان جتي به هجان، سهڻي سنڌ تنهنجو ٿيان 👑<br><br>
+    جئي سنڌ 🫡❤️<br>
+    جئي لطيف 💞<br><br>
+    🎉 منهنجي طرفان اوهان سڀني کي دل جي گهراين سان ڪلچر ڊي جون مبارڪون!
+  </div>
+
+  <!-- SINDH IMAGE -->
+  <div class="sindh-container">
+    <img src="sindh.jpg" alt="Sindh Image">
+  </div>
+
+</body>
+</html>
     .photo-container img {
       width: 100%;
       height: 100%;
@@ -340,3 +468,4 @@
 
 </body>
 </html>
+
