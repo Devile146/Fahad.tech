@@ -100,100 +100,124 @@
 
     .box {
       position: relative;
-      padding: 30px;
-      margin-bottom: 40px;
-      width: 75%;
-      max-width: 700px;
-      text-align: center;
-      font-size: 1.3em;
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 15px;
-      z-index: 1;
-      overflow: hidden;
-      font-family: 'Orbitron', sans-serif;
-      color: #000;
-    }
+<!DOCTYPE html>
+<html lang="sd">
+<head>
+  <meta charset="UTF-8">
+  <title> 💞 FAHAD SINDHI 👑 Intro</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Audiowide&display=swap');
 
-    .box::before {
-      content: '';
-      position: absolute;
-      top: -3px;
-      left: -3px;
-      right: -3px;
-      bottom: -3px;
-      background: linear-gradient(60deg, #ff00cc, #00ffff, #ffcc00, #00ffcc, #ff00cc);
-      background-size: 400% 400%;
-      border-radius: 20px;
-      z-index: -1;
-      animation: rotateBorder 20s linear infinite;
-      filter: blur(2px);
-    }
+    * {  
+      margin: 0;  
+      padding: 0;  
+      box-sizing: border-box;  
+    }  
 
-    @keyframes rotateBorder {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+    body {  
+      background-color: #000;  
+      font-family: 'Audiowide', sans-serif;  
+      display: flex;  
+      flex-direction: column;  
+      align-items: center;  
+      justify-content: center; /* vertical center */  
+      min-height: 100vh;  
+      overflow-x: hidden;  
+      color: white;  
+      padding: 30px 10px;  
+      position: relative;  
+      text-align: center; /* horizontal center */  
+    }  
 
-    .button {
-      background-color: #111;
-      color: #fff;
-      border: 2px solid transparent;
-      padding: 15px 30px;
-      margin: 25px 0;
-      font-size: 1em;
-      border-radius: 10px;
-      text-align: center;
-      cursor: pointer;
-      transition: 0.4s ease;
-      animation: buttonGlow 5s infinite alternate;
-      box-shadow: 0 0 15px #00ffff, 0 0 30px #ff00ff;
-      font-family: 'Orbitron', sans-serif;
-    }
+    body::before {  
+      content: '';  
+      position: absolute;  
+      top: 0; left: 0;  
+      width: 100%;  
+      height: 100%;  
+      background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc, #ffcc00);  
+      background-size: 600% 600%;  
+      animation: gradientBackground 15s ease infinite;  
+      z-index: -1;  
+      opacity: 0.2;  
+    }  
 
-    .button:hover {
-      transform: scale(1.07);
-      box-shadow: 0 0 25px #ff00cc, 0 0 35px #00ffcc;
-    }
+    @keyframes gradientBackground {  
+      0% { background-position: 0% 50%; }  
+      50% { background-position: 100% 50%; }  
+      100% { background-position: 0% 50%; }  
+    }  
 
-    @keyframes buttonGlow {
-      0% {
-        box-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
-        border-color: #00ffff;
-      }
-      50% {
-        box-shadow: 0 0 20px #ff33cc, 0 0 30px #00ffcc;
-        border-color: #ff00cc;
-      }
-      100% {
-        box-shadow: 0 0 25px #00ffcc, 0 0 40px #ff66ff;
-        border-color: #00ffff;
-      }
-    }
+    .neon-text {  
+      font-size: 2.8em;  
+      text-align: center;  
+      color: #00ffff;  
+      text-shadow: 0 0 5px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff;  
+      animation: flicker 2.5s infinite alternate;  
+      margin-bottom: 40px;  
+    }  
 
+    @keyframes flicker {  
+      0% { opacity: 1; }  
+      50% { opacity: 0.9; }  
+      100% { opacity: 1; }  
+    }  
+
+    .box {  
+      position: relative;  
+      padding: 30px;  
+      width: 90%;  
+      max-width: 700px;  
+      text-align: center;  
+      font-size: 1.4em;  
+      font-weight: 700;  
+      background: rgba(255, 255, 255, 0.9);  
+      border-radius: 15px;  
+      z-index: 1;  
+      overflow: hidden;  
+      font-family: 'Orbitron', sans-serif;  
+      color: #000;  
+      line-height: 1.8em;  
+      margin: 0 auto; /* horizontal center */  
+    }  
+
+    .box::before {  
+      content: '';  
+      position: absolute;  
+      top: -3px;  
+      left: -3px;  
+      right: -3px;  
+      bottom: -3px;  
+      background: linear-gradient(60deg, #ff00cc, #00ffff, #ffcc00, #00ffcc, #ff00cc);  
+      background-size: 400% 400%;  
+      border-radius: 20px;  
+      z-index: -1;  
+      animation: rotateBorder 20s linear infinite;  
+      filter: blur(2px);  
+    }  
+
+    @keyframes rotateBorder {  
+      0% { background-position: 0% 50%; }  
+      50% { background-position: 100% 50%; }  
+      100% { background-position: 0% 50%; }  
+    }  
   </style>
 </head>
 <body>
 
   <h1 class="neon-text">TECHNICAL FAHAD</h1>
 
-  <!-- PHOTO -->
-  <div class="photo-container">
-    <img src="fahad.jpg" alt="Fahad Photo">
-  </div>
-
-  <!-- 1st Intro Box -->
   <div class="box">
-    Welcome to my official website!  
-    I am Technical Fahad – Android Developer, Script Maker, Bot Developer,  
-    and CyberTech Specialist 😌🫰💞.
+    🌿 محترم دوستو 🌿<br><br>
+    ✨ اڄ اسانجو سنڌي ڪلچر ڊي آهي، هڪ اهڙو ڏينهن جيڪو اسانجي ثقافت، رواجن ۽ محبت سان ڀريل تاريخ جو جشن آهي.<br><br>
+    اچو ته پنهنجي ورثي کي ياد ڪريون، اجرڪ، موسيقي، تهذيب ۽ ريتون گڏجي 💞ملهائينداسين<br><br>
+    🧡 سنڌي ثقافت جي هر رنگ ۽ هر روايت اسانجي سڃاڻپ آهي، اچو ته ان کي فخر سان پيش ڪريون.<br><br>
+    ❤️ هن جنم، هن جنم لاء وچن ٿو ڪريان، 💫<br>
+    💞 مان جتي به هجان، سهڻي سنڌ تنهنجو ٿيان 👑<br><br>
+    جئي سنڌ 🫡❤️<br>
+    جئي لطيف 💞<br><br>
+    🎉 منهنجي طرفان اوهان سڀني کي دل جي گهراين سان ڪلچر ڊي جون مبارڪون!
   </div>
-
-  <!-- CONTACT BUTTON -->
-  <a href="https://wa.me/923251138959" target="_blank">
-    <button class="button">💞 Contact Me 💞</button>
-  </a>
 
 </body>
 </html>
-
